@@ -698,7 +698,7 @@ class App extends Component {
       title: "Ramzaan Sharif", // (optional, for iOS this is only used in apple watch, the title will be the app name on other iOS devices)
       message: "Alarm", // (required)
       playSound: true,
-      soundName: 'siren.mp3',
+      soundName: 's.mp3',
       vibrate: true,
       vibration: 900,
       autoCancel: true,
@@ -797,15 +797,15 @@ class App extends Component {
       message: "Alarm", // (required)
       date: date, // in 60 secs
       playSound: true,
-      soundName: 'bansuri.mp3',
+      soundName: 's.mp3',
       vibrate: true,
       vibration: 300,
       autoCancel: true,
       bigText: 'Alarm',
       ongoing: false,
-      number: '10',
       id: '123',
     });
+    console.log('ye chala bhai')
   }
 
   stopAlarm = () => {
