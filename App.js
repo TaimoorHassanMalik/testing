@@ -123,7 +123,7 @@ class App extends Component {
       console.log('Any error ? ', e)
     }
   }
-  
+
   alert = () => {
     Alert.alert(
       'Welcome: ',
@@ -992,11 +992,14 @@ class App extends Component {
           <View style={[styles.city, { width: 130 }]}>
             <Text style={{ color: 'white', fontSize: 18 }}>{this.state.selected.toUpperCase()}</Text>
           </View>
-          <TouchableOpacity style={[styles.city, { width: 60 }]} onPress={this.alert}>
+          {/* <TouchableOpacity style={[styles.city, { width: 60 }]} onPress={this.alert}>
             <Text style={{ color: 'white', fontSize: 13 }}>Update</Text>
+          </TouchableOpacity> */}
+          <TouchableOpacity style={[styles.city, { width: 60 }]} onPress={this.alarm}>
+            <Text style={{ color: 'white', fontSize: 13 }}>Clock</Text>
           </TouchableOpacity>
-          {/* <View style={{ paddingLeft: 75 }}><Text style={{ fontSize: 13 }}>Activate Siren</Text></View> */}
-          {/* <TouchableOpacity style={[styles.city, { width: 55, backgroundColor: 'lightgray' }]} onPress={this.alarm}>
+          <View ><Text style={{ fontSize: 13 }}>Activate Siren</Text></View>
+          <TouchableOpacity style={[styles.city, { width: 55, backgroundColor: 'lightgray' }]} onPress={this.alarm}>
             <Switch
               trackColor={{ false: "#767577", true: "#81b0ff" }}
               thumbColor={this.state.toggle ? "green" : "red"}
@@ -1005,7 +1008,7 @@ class App extends Component {
               onValueChange={this.toggleSwitch}
               value={this.state.toggle}
             />
-          </TouchableOpacity> */}
+          </TouchableOpacity>
         </View>
 
         {/* Ye Footer Hai */}
