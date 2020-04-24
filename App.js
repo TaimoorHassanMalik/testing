@@ -53,6 +53,7 @@ class App extends Component {
       },
       onNotification: function (notification) {
         console.log('NOTIFICATION:', notification);
+       
       },
       permissions: {
         alert: true,
