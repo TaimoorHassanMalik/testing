@@ -12,23 +12,7 @@ class Sidebar extends React.Component {
     }
 
     render() {
-
         return (
-            // <View style={{ flex: 1 }}>
-            //     <View style={{ flex: 3, flexDirection: 'row', backgroundColor: 'red' }}>
-
-            // <Image source={require('../../assets/logo.png')} style={styles.profile} />
-
-            // <View style={{ alignItems: 'baseline', justifyContent: 'space-evenly', marginTop: 20 }} >
-            //     <Text style={styles.name}>Ramzan Sharif</Text>
-            // </View>
-
-            //     </View>
-
-            // <View style={styles.container}>
-            //     <DrawerNavigatorItems {...this.props} />
-            // </View>
-            // </View>
             <View style={styles.container}>
                 <View style={{ flex: 1, backgroundColor: 'white', alignItems: 'center', justifyContent: 'center', marginTop: 25 }}>
                     <Image source={require('../../assets/logo.png')} style={styles.profile} />
