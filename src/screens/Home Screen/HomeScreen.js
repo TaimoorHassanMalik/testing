@@ -2,12 +2,14 @@ import React, { Component } from 'react'
 import { Text, StyleSheet, View, FlatList, TouchableOpacity, Switch, ImageBackground, Linking, Alert } from 'react-native'
 import AsyncStorage from '@react-native-community/async-storage';
 import { CheckBox, } from 'react-native-elements'
-import { Icon, Picker, Form } from "native-base";
+import { Picker, Form } from "native-base";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import moment from 'moment';
 import { islamabad2020, lahore2020, faisalabad2020, multan2020, peshawar2020, karachi2020, queta2020 } from './hanafi'
 import { islamabad2020Jafria, lahore2020Jafria, faisalabad2020Jafria, peshawar2020Jafria, multan2020Jafria, karachi2020Jafria, queta2020Jafria } from './jafria'
 import PushNotification from 'react-native-push-notification'
+import ActionButton from 'react-native-action-button';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 import DateTimePickerModal from "react-native-modal-datetime-picker";
 
@@ -992,9 +994,10 @@ class App extends Component {
 
 
         <View style={styles.details}>
-          <View style={[styles.city, { width: 50 }]}>
-            <Icon name="md-menu" size={30} style={{ color: 'red' }} onPress={this.props.navigation.openDrawer} />
-          </View>
+          {/* <View style={[styles.city, { width: 50 }]}>
+            <Icon name="md-menu" size={25} style={{ color: 'white' }} onPress={this.props.navigation.openDrawer} />
+          </View> */}
+
           <View style={[styles.city, { width: 130 }]}>
             <Text style={{ color: 'white', fontSize: 18 }}>{this.state.selected.toUpperCase()}</Text>
           </View>
@@ -1026,7 +1029,8 @@ class App extends Component {
 
           </View>
         </View>
-
+        <ActionButton buttonColor="#E9446A" onPress={this.props.navigation.openDrawer} offsetX={10} offsetY={10} >
+        </ActionButton>
       </View>
     )
   }
@@ -1040,6 +1044,11 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     marginTop: -30,
     paddingHorizontal: 10
+  },
+  actionButtonIcon: {
+    fontSize: 20,
+    height: 22,
+    color: 'white',
   },
   container: {
     flex: 1,
