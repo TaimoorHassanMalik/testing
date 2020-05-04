@@ -1029,7 +1029,13 @@ class App extends Component {
 
           </View>
         </View>
-        <ActionButton buttonColor="#E9446A" onPress={this.props.navigation.openDrawer} offsetX={10} offsetY={10} >
+        <ActionButton buttonColor="#E9446A" onPress={this.props.navigation.openDrawer}
+          offsetX={10}
+          offsetY={10}
+          nativeFeedbackRippleColor='green'
+          fixNativeFeedbackRadius={true}
+        >
+
         </ActionButton>
       </View>
     )

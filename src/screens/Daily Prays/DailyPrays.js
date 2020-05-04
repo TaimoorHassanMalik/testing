@@ -9,7 +9,7 @@ export default class DailyPrays extends Component {
             <View style={styles.conatiner}>
                 <Text> DailyPrays</Text>
                 <ActionButton buttonColor="#E9446A" onPress={this.props.navigation.openDrawer} offsetX={10} offsetY={10} >
-        </ActionButton>
+                </ActionButton>
             </View>
         )
     }
@@ -25,5 +25,5 @@ const styles = StyleSheet.create({
         fontSize: 20,
         height: 22,
         color: 'white',
-      },
+    },
 })
